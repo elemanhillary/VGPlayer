@@ -21,7 +21,7 @@ Pod::Spec.new do |s|
   s.source_files = 'VGPlayer/Classes/*.*', 'VGPlayer/Classes/**/*.*'
   s.resources    = 'VGPlayer/*.xcassets'
   s.requires_arc = true
-  s.dependency 'SnapKit', '~> 4.2.0'
+  s.dependency 'SnapKit'
   s.frameworks   = 'UIKit', 'AVFoundation', 'Foundation'
 
 end
