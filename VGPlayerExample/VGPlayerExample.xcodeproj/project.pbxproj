@@ -250,7 +250,7 @@
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-VGPlayerExample/Pods-VGPlayerExample-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-VGPlayerExample/Pods-VGPlayerExample-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
 				"${BUILT_PRODUCTS_DIR}/VGPlayer/VGPlayer.framework",
 			);
@@ -261,7 +261,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-VGPlayerExample/Pods-VGPlayerExample-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-VGPlayerExample/Pods-VGPlayerExample-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		7010C87832BE2D125E2FC843 /* [CP] Check Pods Manifest.lock */ = {

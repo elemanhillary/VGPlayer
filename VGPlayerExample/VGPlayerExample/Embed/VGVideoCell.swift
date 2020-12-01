@@ -11,12 +11,13 @@ import UIKit
 class VGVideoCell: UITableViewCell {
 
     var playCallBack:((IndexPath?) -> Swift.Void)?
+    var nextCallBack:((IndexPath?) -> Swift.Void)?
     var indexPath : IndexPath?
     
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+        self.contentView.bounds = UIScreen.main.bounds
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
@@ -30,6 +31,13 @@ class VGVideoCell: UITableViewCell {
     @IBAction func onPlay(_ sender: Any) {
         if let callBack = playCallBack {
             callBack(indexPath)
+        }
+    }
+    
+    override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
+        if let l = touches.first {
+            let test = self.hitTest(l.location(in: self), with: event)
+            print("VIEW PRESSED", test)
         }
     }
 }
